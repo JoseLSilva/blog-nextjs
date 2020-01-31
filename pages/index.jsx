@@ -1,3 +1,20 @@
+import { Layout, Container, Posts } from "../components";
+
+const items = ["1", "2", "3", "4"];
+
 export default () => (
-  <h1 className="text-5xl font-bold text-purple-500">Blog Next!</h1>
+  <Layout>
+    <Container>
+      <div className="flex flex-wrap">
+        {items.map(key => (
+          <div
+            className="w-full sm:w-1/2 md:w-1/2 lg:w-full my-2 px-2"
+            key={key}
+          >
+            <Posts />
+          </div>
+        ))}
+      </div>
+    </Container>
+  </Layout>
 );
