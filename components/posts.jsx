@@ -20,7 +20,7 @@ export default () => {
               Can coffee make you a better developer?
             </a>
           </div>
-          <div className="text-sm flex text-gray-600 mb-2">
+          <div className="text-sm flex text-gray-700 mb-2">
             <span className="mr-2 flex items-center">
               <SVG icon="calendar" className="w-5 mr-1" />
               30/01/2020
@@ -29,7 +29,7 @@ export default () => {
               <SVG icon="comments" className="w-4 mr-1" />3 Comentarios
             </span>
           </div>
-          <p className="text-gray-700 text-base">
+          <p className="text-gray-800 text-base">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Voluptatibus quia, nulla! Maiores et perferendis eaque,
             exercitationem praesentium nihil.
@@ -37,7 +37,7 @@ export default () => {
         </div>
 
         <div className="clearfix">
-          <button className="float-right bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+          <button className="float-right bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded-full">
             More...
           </button>
           <div className="flex items-center">
@@ -48,7 +48,7 @@ export default () => {
             />
             <div className="text-sm">
               <p className="text-gray-900 leading-none">Blog Next.js</p>
-              <p className="text-gray-600">Aug 18</p>
+              <p className="text-gray-700">Aug 18</p>
             </div>
           </div>
         </div>
