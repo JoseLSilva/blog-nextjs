@@ -25,8 +25,12 @@ export default class extends Document {
           />
           <link rel="manifest" href="/manifest.webmanifest" />
           <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-          <meta name="msapplication-TileColor" content="#efeeeb" />
-          <meta name="theme-color" content="#efeeeb" />
+          <meta name="msapplication-TileColor" content="#efefec" />
+          <meta name="theme-color" content="#38b2ac" />
+          <meta
+            name="apple-mobile-web-app-status-bar-style"
+            content="black-translucent"
+          />
         </Head>
         <body>
           <Main />

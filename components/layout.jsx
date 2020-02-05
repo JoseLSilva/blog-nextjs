@@ -13,7 +13,9 @@ export default ({ children, title, description }) => (
       />
     </Head>
     <Header />
-    <main className="flex-grow container mx-auto py-4">{children}</main>
+    <main className="flex-grow container bg-white mx-auto py-4">
+      {children}
+    </main>
     <Footer />
   </Fragment>
 );

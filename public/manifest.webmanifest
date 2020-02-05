@@ -1,8 +1,8 @@
 {
   "name": "Blog developed in Next.js",
   "short_name": "Blog Nextjs",
-  "theme_color": "#0978a6",
-  "background_color": "#efeeeb",
+  "theme_color": "#38b2ac",
+  "background_color": "#efefec",
   "orientation": "landscape",
   "display": "standalone",
   "start_url": "/",
