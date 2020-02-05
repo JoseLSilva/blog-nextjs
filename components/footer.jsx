@@ -5,8 +5,8 @@ export default function Footer() {
   return (
     <footer>
       <div className="flex-grow bg-teal-500 text-gray-800 font-semibold p-6">
-        <div className="flex mb-4">
-          <div className="w-1/2">
+        <div className="flex-grow items-center md:flex">
+          <div className="w-full md:w-1/2">
             <div className="flex items-center flex-shrink-0 mr-6">
               <SVG icon="logo" className="fill-current h-20 w-auto mr-1" />
               <span className="font-semibold text-5xl tracking-tight text-gray-800">
@@ -14,7 +14,7 @@ export default function Footer() {
               </span>
             </div>
           </div>
-          <div className="w-1/2">
+          <div className="w-full md:w-1/2">
             <p>
               {`Copyright © ${
                 new Date().getFullYear() != (process.env.STARTYEAR || 2020)
@@ -24,25 +24,29 @@ export default function Footer() {
                   : new Date().getFullYear()
               } ${process.env.TITLE || "Blog Next.js"}. All Rights Reserved.`}
             </p>
-            <p className="mt-2">
-              Disclaimer: This site AnimeBatch does not store any files on its
-              server. All contents are provided by non-affiliated third parties.
+            <p className="text-justify md:text-left mt-2">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
+              voluptatibus ex ad accusamus aliquam corporis labore est aut
+              aperiam. Assumenda eveniet corrupti quibusdam. Magni accusamus
+              iusto eos, corporis tenetur architecto?
             </p>
           </div>
         </div>
 
-        <div className="flex">
+        <div className="flex items-center md:ml-3 my-2 md:my-0">
           <Link href="/">
-            <a className="mr-3 py-2">Home</a>
+            <a className="flex-1 md:flex-none text-center mr-3 py-2">Home</a>
           </Link>
           <Link href="/">
-            <a className="mr-3 py-2">About</a>
+            <a className="flex-1 md:flex-none text-center mr-3 py-2">About</a>
           </Link>
           <Link href="/">
-            <a className="mr-3 py-2">Contact</a>
+            <a className="flex-1 md:flex-none text-center mr-3 py-2">Contact</a>
           </Link>
           <Link href="/">
-            <a className="mr-3 py-2">Subscribe</a>
+            <a className="flex-1 md:flex-none text-center mr-3 py-2">
+              Subscribe
+            </a>
           </Link>
         </div>
 
@@ -64,22 +68,22 @@ export default function Footer() {
               <SVG icon="instagram" className="w-6" />
             </button>
           </div>
-          <div className="flex">
+          <div className="flex flex-col md:flex-row">
             <Link href="/privacy-policy">
-              <a className="mr-3 py-2">Privacy Policy</a>
+              <a className="py-1 md:mr-3 md:py-2">Privacy Policy</a>
             </Link>
             <Link href="/terms-of-service">
-              <a className="mr-3 py-2">Terms of service</a>
+              <a className="py-1 md:mr-3 md:py-2">Terms of service</a>
             </Link>
           </div>
         </div>
-        <div>
+        <div className="text-center mt-3 -mb-1 md:text-left md:my-0">
           &#123;&#34;Developed by&#34;: &#34;
           <a href="http://silva.app" target="_blank" rel="noopener noreferrer">
             José L Silva
           </a>
           &#34;, &#34;with&#34;: &#34;
-          <span className="text-red-600">&#9829;</span>&#34;&#125;
+          <span className="text-red-600">&hearts;</span>&#34;&#125;
         </div>
       </div>
     </footer>
