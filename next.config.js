@@ -3,7 +3,8 @@ const withCSS = require("@zeit/next-css");
 module.exports = withCSS({
   env: {
     LANG: "en",
-    TITLE: "Blog Nextjs",
+    STARTYEAR: 2020,
+    TITLE: "Blog Next.js",
     DESCRIPTION: "Blog developed in Next.js"
   },
   devIndicators: {

@@ -1,9 +1,9 @@
 import { Layout } from "../components";
 
-export default function About() {
+export default function TermsOfService() {
   return (
     <Layout>
-      <h1>About</h1>
+      <h1>Terms of service</h1>
     </Layout>
   );
 }

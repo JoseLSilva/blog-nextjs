@@ -1,6 +1,6 @@
 import SVG from "./svg";
 
-export default () => {
+export default function Posts() {
   return (
     <div className="max-w-sm w-full lg:max-w-full lg:flex hover:shadow-md">
       <div
@@ -37,8 +37,11 @@ export default () => {
         </div>
 
         <div className="clearfix">
-          <button className="float-right bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded-full">
-            More...
+          <button
+            aria-label="Read More"
+            className="float-right bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded-full"
+          >
+            Read More ...
           </button>
           <div className="flex items-center">
             <img
@@ -55,4 +58,4 @@ export default () => {
       </div>
     </div>
   );
-};
+}
