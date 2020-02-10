@@ -1,0 +1,7 @@
+setps:
+  - name: "gcr.io/cloud-builders/npm"
+    arg: "install"
+  - name: "gcr.io/cloud-builders/npm"
+    arg: ["run", "build:prod"]
+  - name: "gcr.io/cloud-builders/gcloud"
+    arg: ["app", "deploy"]
