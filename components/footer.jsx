@@ -7,9 +7,9 @@ export default function Footer() {
       <div className="flex-grow bg-teal-500 text-gray-800 font-semibold p-6">
         <div className="flex-grow items-center md:flex">
           <div className="w-full md:w-1/2">
-            <div className="flex items-center flex-shrink-0 mr-6">
+            <div className="flex items-center flex-shrink-0">
               <SVG icon="logo" className="fill-current h-20 w-auto mr-1" />
-              <span className="font-semibold text-5xl tracking-tight text-gray-800">
+              <span className="font-semibold text-4xl md:text-5xl tracking-tight text-gray-800">
                 {process.env.TITLE || "Blog Next.js"}
               </span>
             </div>
@@ -70,14 +70,14 @@ export default function Footer() {
           </div>
           <div className="flex flex-col md:flex-row">
             <Link href="/privacy-policy">
-              <a className="py-1 md:mr-3 md:py-2">Privacy Policy</a>
+              <a className="py-2 -mt-1 md:mt-0 md:mr-3">Privacy Policy</a>
             </Link>
             <Link href="/terms-of-service">
-              <a className="py-1 md:mr-3 md:py-2">Terms of service</a>
+              <a className="py-2 -mt-1 md:mt-0 md:mr-3">Terms of service</a>
             </Link>
           </div>
         </div>
-        <div className="text-center mt-3 -mb-1 md:text-left md:my-0">
+        <div className="text-center mt-2 -mb-1 md:text-left md:my-0 text-sm md:text-base">
           &#123;&#34;Developed by&#34;: &#34;
           <a href="http://silva.app" target="_blank" rel="noopener noreferrer">
             José L Silva

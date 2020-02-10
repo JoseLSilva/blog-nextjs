@@ -35,6 +35,11 @@ export default function Header() {
         <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden text-gray-800">
           <div className="lg:flex-grow"></div>
           <div>
+            <Link href="/article">
+              <a className="inline-block text-sm px-4 py-2 leading-none lg:rounded text-gray-900 font-medium border-white hover:border-transparent hover:text-teal-700 hover:bg-white lg:mt-0 mr-1">
+                Article
+              </a>
+            </Link>
             <Link href="/about">
               <a className="inline-block text-sm px-4 py-2 leading-none lg:rounded text-gray-900 font-medium border-white hover:border-transparent hover:text-teal-700 hover:bg-white lg:mt-0 mr-1">
                 About
